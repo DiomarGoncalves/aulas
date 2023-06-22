@@ -1,91 +1,88 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Cabeçalho */
-  header {
+}
+
+header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-  }
-  
-  /* Navegação */
-  nav {
+}
+
+nav {
     background-color: #f4f4f4;
     padding: 10px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
     margin: 0 10px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #333;
     text-decoration: none;
     padding: 5px;
     transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     color: #666;
-  }
-  
-  /* Seções */
-  section {
+}
+
+section {
     padding: 20px;
     text-align: center;
-  }
-  
-  /* Lista de vídeos */
-  .video-list {
+}
+
+.video-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .video-item {
+}
+
+.video-item {
     margin: 10px;
     max-width: 300px;
-  }
-  
-  .video-item img {
+}
+
+.video-item img {
     width: 100%;
     height: auto;
-  }
-  
-  /* Menu de cursos */
-  .menu-cursos {
+}
+
+.menu-cursos {
     background-color: #f0f0f0;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  .menu-cursos ul {
+.menu-cursos ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  .menu-cursos li {
+.menu-cursos li {
     display: inline-block;
     margin-right: 10px;
     cursor: pointer;
     text-align: center;
   }
   
-  .menu-cursos img {
+.menu-cursos img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -93,37 +90,32 @@ body {
     margin-bottom: 5px;
   }
   
-  .menu-cursos span {
+.menu-cursos span {
     display: block;
     font-size: 14px;
   }
   
-  /* Seção de vídeo */
-  .video-section {
-    display: none;
-  }
-  
-  .video-section.active {
-    display: block;
-  }
-  
-  .video-section iframe {
-    width: 100%;
-    height: 315px;
-  }
-  
-  .video-section .download {
+  .video-section div.dowload{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .video-section .download a {
+    width: 100px;
+    height: 100%;
+}
+.video-section div a{
     background-color: #333;
     text-decoration: none;
     color: white;
     border-radius: 5px;
-    padding: 10px 20px;
-  }
-  
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .menu-cursos li {
+        margin-bottom: 20px;
+    }
+}
