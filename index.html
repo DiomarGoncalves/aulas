@@ -1,20 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Site de Aulas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas intensivão</title>
-    <link rel="stylesheet" href="css.css">
+    <style>
+        .video-section {
+            display: none;
+        }
+    </style>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <a href="Aruivos de todas as aulas.zip">download dos aquivos de todas as aulas</a>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XVqMQiKX8m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CLQ-x54ET08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4IOLM7FOPUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nHPB-8GJOag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oyJhfnKRoOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zEG3CRt3tw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+        <h1>Alpha-DEV</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aulas">Aulas</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo ao Alpha-Devs</h2>
+        <p>⬇️⬇️⬇️⬇️mini cursos salvos abaixo⬇️⬇️⬇️⬇️</p>
+    </section>
+
+    <section id="aulas">
+        <div class="menu-cursos">
+            <ul>
+                <li class="curso-item" onclick="abrirCurso('curso1')">
+                    <img src="https://th.bing.com/th/id/OIP.EWFLA1XqnhArxVt1iChDBgHaDt?pid=ImgDet&rs=1" alt="Curso 1">
+                </li>
+                <li class="curso-item" onclick="abrirCurso('curso2')">
+                    <img src="https://th.bing.com/th/id/OIP.tEtEwhb1dyM9CwqzdrmSTgHaDz?pid=ImgDet&rs=1" alt="Curso 2">
+                </li>
+                <li class="curso-item" onclick="abrirCurso('')">
+                    <img src="https://th.bing.com/th/id/OIP.GDz845H2A5ubgXsl1sFLVgHaEK?pid=ImgDet&rs=1" alt="Curso 3">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="curso1" class="video-section">
+        <!-- Vídeos do Curso 1 -->
+        <h2>Vídeos do Curso Intensivão Python</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XVqMQiKX8m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4IOLM7FOPUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHPB-8GJOag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oyJhfnKRoOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zEG3CRt3tw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLQ-x54ET08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="download">
+            <a href="Aruivos de todas as aulas.zip">Download dos arquivos das aulas</a>
+        </div>
+    </section>
+
+    
+
+    <section id="curso2" class="video-section">
+        <!-- Vídeos do Curso 2 -->
+        <h2>Vídeos do Curso 2</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="curso3" class="video-section">
+        <!-- Vídeos do Curso 3 -->
+        <h2>Vídeos do Curso 3</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/video6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Eu resolvi criar esse site para guardar cursos de projetos legais para portfólio</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Se quiser entrar na Alpha-Devs, segue o link abaixo</p>
+        <a href="https://chat.whatsapp.com/BEZrIZ3I1mP8Yy49nqTBHU">Alpha Devs</a>
+    </section>
 </body>
 </html>
-
