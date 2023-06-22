@@ -110,12 +110,35 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    /* Restante do código existente */
+
+    iframe {
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        max-width: 560px;
+        height: 315px;
+    }
+}
+@media screen and (max-width:425px) {
+    /* Restante do código existente */
+    iframe {
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        max-width: 360px;
+        height: 215px;
     }
     
-    .menu-cursos li {
-        margin-bottom: 20px;
+}
+@media screen and (max-width:375px) {
+    /* Restante do código existente */
+    iframe {
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        max-width: 260px;
+        height: 115px;
     }
+    
 }
