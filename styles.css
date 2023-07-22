@@ -141,8 +141,8 @@ section {
         align-items: center;
         justify-content: center;
         margin: 5px;
-        max-width: 260px;
-        height: 115px;
+        max-width: 85%;
+        height: 200px;
     }
     
 }
