@@ -1,6 +1,6 @@
 {
-  "short_name": "aulas",
-  "name": "aulas",
+  "short_name": "Site de Aulas",
+  "name": "Site de Aulas",
   "icons": [
       {
           "src": "favicon_io/android-chrome-192x192.png",
@@ -14,7 +14,7 @@
       }
   ],
   "start_url": "index.html",
-  "background_color": "#428bca",
+  "background_color": "#242424",
   "display": "standalone",
-  "theme_color": "#428bca"
+  "theme_color": "#242424"
 }
