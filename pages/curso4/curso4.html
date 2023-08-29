@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site de Aulas</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="manifest" href="manifest.webmanifest">
+    
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            if('serviceWorker' in navigator){
+                navigator.serviceWorker.register('SW.js')
+                  .then(function(){
+                    console.log('service worker registered');
+                  })
+                  .catch(function(){
+                    console.warn('service worker falied');
+                  });
+            }
+        </script>
+    </head>
+<body>
+  <main class="content">
+    <nav>
+      <div class="home">
+        <a href="https://diomarbr.github.io/aulas/">Pagina Pincipal</a>
+      </div>
+      
+
+      <ul id="video-list">
+      <li data-videocode="7areuFpnCE0">Curso de JavacScript Aula 1</li>
+      <li data-videocode="4IOLM7FOPUM">Curso de JavacScript Aula 2</li>
+      <li data-videocode="nHPB-8GJOag">Curso de JavacScript Aula 3</li>
+      <li data-videocode="oyJhfnKRoOc">Curso de JavacScript Aula 4</li>
+      <li data-videocode="zEG3CRt3tw0">Curso de JavacScript Aula 5</li>
+      <li data-videocode="CLQ-x54ET08">Curso de JavacScript Aula 6</li>
+      <li><a href="Arquivos de todas as aulas.zip">Download dos arquivos das aulas</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
