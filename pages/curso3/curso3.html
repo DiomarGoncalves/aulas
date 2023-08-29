@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site de Aulas</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="manifest" href="manifest.webmanifest">
+    
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            if('serviceWorker' in navigator){
+                navigator.serviceWorker.register('SW.js')
+                  .then(function(){
+                    console.log('service worker registered');
+                  })
+                  .catch(function(){
+                    console.warn('service worker falied');
+                  });
+            }
+        </script>
+    </head>
+<body>
+  <main class="content">
+    <nav>
+      <div class="home">
+        <a href="https://diomarbr.github.io/aulas/">Pagina Pincipal</a>
+      </div>
+      
+
+      <ul id="video-list">
+      <li data-videocode="FXqX7oof0I4">Curso de React 1</li>
+      <li data-videocode="Jg6JaEjovJk">Curso de React 2</li>
+      <li data-videocode="9iKNxnFJY_Q">Curso de React 3</li>
+      <li data-videocode="ZLtBdpwg8tI">Curso de React 4</li>
+      <li data-videocode="20hlPRPVMoU">Curso de React 5</li>
+      <li data-videocode="2cNLJlbudPU">Curso de React 6</li>
+      <li data-videocode="hcp1LqP2OCE">Curso de React 7</li>
+      <li data-videocode="uqmRi4JXk3s">Curso de React 8</li>
+      <li data-videocode="keEUn64Ceig">Curso de React 9</li>
+      <li data-videocode="obUEByaiwtY">Curso de React 10</li>
+      <li data-videocode="7ewepbLCvHc">Curso de React 11</li>
+      <li data-videocode="01Gj6i2wlS4">Curso de React 12</li>
+      <li data-videocode="eJ8W3l371Jg">Curso de React 13</li>
+      <li data-videocode="ZC8Bqa2AKyY">Curso de React 14</li>
+      <li data-videocode="OinwLJg8k88">Curso de React 15</li>
+      <li data-videocode="QGoAigY0y54">Curso de React 16</li>
+      <li data-videocode="yBWOIq_1i_Y">Curso de React 17</li>
+      <li data-videocode="IO5cQagjhYk">Curso de React 18</li>
+      <li data-videocode="jMmnXL64kqs">Curso de React 19</li>
+      <li data-videocode="KCcSzv1RmuI">Curso de React 20</li>
+      <li data-videocode="gIWmB3EV4Bo">Curso de React 21</li>
+      <li data-videocode="UihbmA0pTCE">Curso de React 22</li>
+      <li data-videocode="bTIncEaBvEY">Curso de React 23</li>
+      <li data-videocode="CG_rFXX1o98">Curso de React 24</li>
+      <li data-videocode="614dYjgtjMM">Curso de React 25</li>
+      <li data-videocode="fKJlHy81JCE">Curso de React 26</li>
+      <li data-videocode="aeXMIq8t4AM">Curso de React 27</li>
+      <li data-videocode="SqdiaUamYX8">Curso de React 28</li>
+      <li data-videocode="M18rC4ceYsM">Curso de React 29</li>
+      <li data-videocode="2HN9n8lrfQk">Curso de React 30</li>
+      <li data-videocode="B9fGJ8EY-Ow">Curso de React 31</li>
+      <li data-videocode="fg_RYCSi288">Curso de React 32</li>
+      <li data-videocode="q-xNgSgIoFA">Curso de React 33</li>
+      <li data-videocode="pOVyVivyfok">Curso de React 34</li>
+      <li data-videocode="XqxUHVVO7-U">Curso de React 35</li>
+      <li data-videocode="5h4vMtBlQQU">Curso de React 36</li>
+      <li data-videocode="HlkbeikH8cs">Curso de React 37</li>
+      <li data-videocode="NbhoeLj6lBs">Curso de React 38</li>
+      <li data-videocode="iulq3G5xroU">Curso de React 39</li>
+      <li data-videocode="uYSV4w1FFnE">Curso de React 40</li>
+      <li data-videocode="7b42lVMdEjE">Curso de React 41</li>
+      <li data-videocode="OLtpJLQLOeM">Curso de React 42</li>
+      <li data-videocode="YVEVrigByKY">Curso de React 43</li>
+      <li data-videocode="-weTjP3pYxs">Curso de React 44</li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
