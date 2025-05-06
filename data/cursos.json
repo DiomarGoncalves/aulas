@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Logica de Programacao - basico",
+    "titulo": "Logica de Programacao - basico",
+    "descricao": "Aprenda Logica de Programacao do zero com este curso basico.",
+    "thumb": "imagens/html-thumb.jpg",
+    "videos": [
+      {
+        "titulo": "U1A1 - O que é ser um programador",
+        "url": "https://drive.google.com/file/d/1l4GRhaqCe86cJihR-5QrdeqEgyiZ26-M/preview"
+      },
+      {
+        "titulo": "U1A2 - Criando seu primeiro programa mentalmente",
+        "url": "https://drive.google.com/file/d/1qUwff_O306LhLZSRBZy_4FV_28V1YdHw/preview"
+      },
+      {
+        "titulo": "U1A3 - Desafio Lógica de Programação",
+        "url": "https://drive.google.com/file/d/1FJaSXJrP7fvEj3qHHUD2ZBkWyMTyRwLo/preview"
+      }
+    ]
+  },
+  {
+    "id": "Logica de Programacao - avançado",
+    "titulo": "Logica de Programacao - avançado",
+    "descricao": "Aprenda Logica de Programacao - avançado com este curso.",
+    "thumb": "imagens/html-thumb.jpg",
+    "videos": [
+      {
+        "titulo": "U1A1 - Linguagem de programação",
+        "url": "https://drive.google.com/file/d/14ho_a97QaD0zK8qfll4W8qRjiKlTQGjl/preview"
+      },
+      {
+        "titulo": "U1A2 - Criando seu primeiro programa mentalmente",
+        "url": "https://drive.google.com/file/d/1qUwff_O306LhLZSRBZy_4FV_28V1YdHw/preview"
+      },
+      {
+        "titulo": "U1A3 - Desafio Lógica de Programação",
+        "url": "https://drive.google.com/file/d/1FJaSXJrP7fvEj3qHHUD2ZBkWyMTyRwLo/preview"
+      }
+    ]
+  }
+]
