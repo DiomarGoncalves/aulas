@@ -1,4 +1,4 @@
-const API_URL = 'https://seu-projeto.vercel.app/api';
+const API_URL = '/api'; // Certifique-se de que o caminho está correto
 
 function getCursoId() {
   const params = new URLSearchParams(window.location.search);

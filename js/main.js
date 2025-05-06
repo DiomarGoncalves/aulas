@@ -1,4 +1,4 @@
-const API_URL = 'https://seu-projeto.vercel.app/api';
+const API_URL = '/api'; // Certifique-se de que o caminho está correto
 
 fetch(`${API_URL}/cursos`)
   .then(res => res.json())
