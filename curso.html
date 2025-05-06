@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="voltar">← Voltar</a>
+    <h1 id="titulo-curso">Curso</h1>
+  </header>
+
+  <main class="curso-container-aulas">
+    <div id="player-container">
+      <iframe id="video-player" src="" width="100%" height="480" allow="autoplay; fullscreen"></iframe>
+    </div>
+
+    <ul id="lista-aulas">
+      <!-- Aulas serão carregadas via JavaScript -->
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Plataforma de Cursos</p>
+  </footer>
+
+  <button id="theme-toggle">🌙</button>
+  <script src="js/curso.js"></script>
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      document.querySelector('header').classList.toggle('light-mode');
+      document.querySelector('footer').classList.toggle('light-mode');
+      document.querySelectorAll('.curso-card').forEach(card => card.classList.toggle('light-mode'));
+      document.querySelectorAll('#lista-aulas li').forEach(li => li.classList.toggle('light-mode'));
+    });
+  </script>
+</body>
+</html>
