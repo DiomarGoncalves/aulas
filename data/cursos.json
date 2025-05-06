@@ -3,7 +3,7 @@
     "id": "Logica de Programacao - basico",
     "titulo": "Logica de Programacao - basico",
     "descricao": "Aprenda Logica de Programacao do zero com este curso basico.",
-    "thumb": "imagens/html-thumb.jpg",
+    "thumb": "imagens/Lógica-de-programação.png",
     "videos": [
       {
         "titulo": "U1A1 - O que é ser um programador",
@@ -23,19 +23,63 @@
     "id": "Logica de Programacao - avançado",
     "titulo": "Logica de Programacao - avançado",
     "descricao": "Aprenda Logica de Programacao - avançado com este curso.",
-    "thumb": "imagens/html-thumb.jpg",
+    "thumb": "imagens/Lógica-de-programação.png",
     "videos": [
       {
         "titulo": "U1A1 - Linguagem de programação",
         "url": "https://drive.google.com/file/d/14ho_a97QaD0zK8qfll4W8qRjiKlTQGjl/preview"
       },
       {
-        "titulo": "U1A2 - Criando seu primeiro programa mentalmente",
-        "url": "https://drive.google.com/file/d/1qUwff_O306LhLZSRBZy_4FV_28V1YdHw/preview"
+        "titulo": "U1A2 - Primeiros comandos",
+        "url": "https://drive.google.com/file/d/1WSYhModu4PDmVbX9ObFnt3-WtqLnskPs/preview"
       },
       {
-        "titulo": "U1A3 - Desafio Lógica de Programação",
-        "url": "https://drive.google.com/file/d/1FJaSXJrP7fvEj3qHHUD2ZBkWyMTyRwLo/preview"
+        "titulo": "U1A3 - Criando seu primeiro código",
+        "url": "https://drive.google.com/file/d/1c-JUVF43028S3ffoM4G6AVEFN8GwLtQx/preview"
+      },
+      {
+        "titulo": "U2A1 - Operadores",
+        "url": "https://drive.google.com/file/d/16FF3RzUPKTxExrKmrLHMpyqY-ihHWBtB/preview"
+      },
+      {
+        "titulo": "U2A2 - Variáveis",
+        "url": "https://drive.google.com/file/d/1Vno-QpwPGdVLsCjo7JEF6KsjNwTfPPN_/preview"
+      },
+      {
+        "titulo": "U2A3 - Entrada de dados",
+        "url": "https://drive.google.com/file/d/1FvxmoPHZmCzP5Y3_IMkXTr4jV6fL9yOf/preview"
+      },
+      {
+        "titulo": "U2A4 - Tipos de dados",
+        "url": "https://drive.google.com/file/d/112zHg_eb1kbw4ryMmtYfmWR8Y-6i1lO3/preview"
+      },
+      {
+        "titulo": "U2A5 - Comparação",
+        "url": "https://drive.google.com/file/d/1hEaKPSS1hFll6FqHchCG67W3JoSeXG-8/preview"
+      },
+      {
+        "titulo": "U2A6 - Comparação lógica",
+        "url": "https://drive.google.com/file/d/1wN-8kDXqMXpUNmVH1XIom86sbUTGOdyl/preview"
+      },
+      {
+        "titulo": "U3A1 - Estruturas de decisão",
+        "url": "https://drive.google.com/file/d/1tU0Jgbo6ukT1rvIEUrB4Fnug3faIkRHr/preview"
+      },
+      {
+        "titulo": "U3A2 - Explorando o IF",
+        "url": "https://drive.google.com/file/d/1DKSNYNCHiORj-iRh4JbAdNQwFOJyXpi1/preview"
+      },
+      {
+        "titulo": "U3A3 - Comparações complexas",
+        "url": "https://drive.google.com/file/d/12bH1NDPxg1386AIPCuAu5TH57kacNG_Z/preview"
+      },
+      {
+        "titulo": "U4A1 - Estruturas de repetição",
+        "url": "https://drive.google.com/file/d/1dfREnRkMQHvUdMw8fxtNrYH_dviCrVfQ/preview"
+      },
+      {
+        "titulo": "U5A1 - Funções",
+        "url": "https://drive.google.com/file/d/1r3iX0iVvqxkJiSxwZFcARgdcQw8T6h6E/preview"
       }
     ]
   }
