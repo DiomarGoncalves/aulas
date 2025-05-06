@@ -1,27 +1,26 @@
+const API_URL = 'https://seu-projeto.vercel.app/api';
+
 function getCursoId() {
   const params = new URLSearchParams(window.location.search);
   return params.get('id');
 }
 
-fetch('data/cursos.json')
+fetch(`${API_URL}/cursos/${getCursoId()}/aulas`)
   .then(res => res.json())
-  .then(cursos => {
-    const id = getCursoId();
-    const curso = cursos.find(c => c.id === id);
-    if (!curso) return;
+  .then(aulas => {
+    if (!aulas.length) return;
 
-    document.getElementById('titulo-curso').innerText = curso.titulo;
     const player = document.getElementById('video-player');
     const lista = document.getElementById('lista-aulas');
 
     // Inicia com o primeiro vídeo
-    player.src = curso.videos[0].url;
+    player.src = `https://drive.google.com/file/d/${aulas[0].video_id}/preview`;
 
-    curso.videos.forEach(video => {
+    aulas.forEach(aula => {
       const li = document.createElement('li');
-      li.innerText = video.titulo;
+      li.innerText = aula.titulo;
       li.onclick = () => {
-        player.src = video.url;
+        player.src = `https://drive.google.com/file/d/${aula.video_id}/preview`;
       };
       lista.appendChild(li);
     });

@@ -1,4 +1,6 @@
-fetch('data/cursos.json')
+const API_URL = 'https://seu-projeto.vercel.app/api';
+
+fetch(`${API_URL}/cursos`)
   .then(res => res.json())
   .then(cursos => {
     const container = document.getElementById('cursos-lista');
