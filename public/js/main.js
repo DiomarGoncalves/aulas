@@ -1,4 +1,4 @@
-const API_URL = '/api'; // A API será acessada diretamente no mesmo domínio
+const API_URL = '/api'; // Certifique-se de que o caminho está correto
 
 fetch(`${API_URL}/cursos`)
   .then(res => res.json())

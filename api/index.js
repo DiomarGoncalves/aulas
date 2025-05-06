@@ -6,7 +6,7 @@ const app = express();
 
 // Configuração do banco de dados PostgreSQL (Neon)
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL, // Variável de ambiente configurada na Vercel
+  connectionString: process.env.DATABASE_URL || 'postgresql://aulas_owner:npg_D6heWu3QYJzH@ep-royal-dream-a4v7b276-pooler.us-east-1.aws.neon.tech/aulas?sslmode=require',
   ssl: { rejectUnauthorized: false },
 });
 
@@ -20,6 +20,7 @@ app.get('/cursos', async (req, res) => {
     const { rows } = await pool.query('SELECT * FROM cursos');
     res.json(rows);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Erro ao buscar cursos' });
   }
 });
@@ -31,6 +32,7 @@ app.get('/cursos/:id/aulas', async (req, res) => {
     const { rows } = await pool.query('SELECT * FROM aulas WHERE curso_id = $1', [id]);
     res.json(rows);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Erro ao buscar aulas' });
   }
 });
@@ -45,6 +47,7 @@ app.post('/cursos', async (req, res) => {
     );
     res.status(201).json(rows[0]);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Erro ao criar curso' });
   }
 });
@@ -60,9 +63,11 @@ app.post('/cursos/:id/aulas', async (req, res) => {
     );
     res.status(201).json(rows[0]);
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: 'Erro ao adicionar aula' });
   }
 });
 
-// Exporta o app para a Vercel
-module.exports = app;
+// Inicia o servidor
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
